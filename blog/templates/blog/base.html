@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <title>Django Girls blog</title>
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% block content %}
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+
+<!-- <h1>A heading</h1> for your most important heading -->
+<!-- <h2>A sub-heading</h2> for a heading at the next level -->
+<!-- <h3>A sub-sub-heading</h3> …and so on, up to <h6> -->
+<!-- <p>A paragraph of text</p> -->
+<!-- <em>text</em> emphasizes your text -->
+<!-- <strong>text</strong> strongly emphasizes your text -->
+<!-- <br /> goes to another line (you can't put anything inside br) -->
+<!-- <a href="https://djangogirls.org">link</a> creates a link -->
+<!-- <ul><li>first item</li><li>second item</li></ul> makes a list, just like this one! -->
+<!-- <div></div> defines a section of the page -->
